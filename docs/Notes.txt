@@ -1,0 +1,18 @@
+===================
+Working with forms
+===================
+
+<form> element acts like a container for all the form fields.
+
+All the form elements are going to appear inside the form tags ex:
+<form id=''>
+<input name='' type=''>
+</form>
+
+It's not a good pratice to put a input outside the form.
+
+action='' it's a specific property of form element
+<form id='' action=''>
+<input name='' type=''>
+</form>
+
