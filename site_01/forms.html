@@ -7,7 +7,21 @@
 	<!--<form id="myform" action='form-processor.php'>
 	we should allways set a action property-->
 		<form id="myform">
-		<input type="text" name="firstname">
+			<label for="firstname">First Name:</label><!--for='id of the input'-->
+			<input id='firstname' type="text" name="firstname"> <!-- input with a text field-->
+			<br/><!--break-->
+			<label for="lastname">Last Name:</label>
+			<input id='lastname' type="text" name="lastname">
+			<br/>
+			<label for="email">Email:</label>
+			<input id='email' type="email" name="email"><!--change to email so the process be more clear, allows other characters-->
+			<br/>
+			<label for="password">Password:</label>
+			<input id='password' type="password" name="password"><!-- characters will be masked-->
+			<br/>
+			<label for="message">Enter a short message:</label>
+			<br/>
+			<textarea id='message' name='message' rows='6' cols="50"></textarea><!-- we set the space with rows='' and cols=''-->
 	</form>
 </body>
 </html>

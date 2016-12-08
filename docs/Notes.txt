@@ -16,3 +16,34 @@ action='' it's a specific property of form element
 <input name='' type=''>
 </form>
 
+=======================
+Text Inputs and Labels
+=======================
+
+Fields that we can place in the form:
+- text related inputs 
+- text field: type='text'
+- email field: type='email'
+- password field: type='password'
+
+In the input the id it's going to be related with the label. 
+And label element makes the text related with the text field.
+
+A <label> is a idication of what the field is about. It's related with the  field.
+The for='' atribute is equal to the id='' of the input we want to associate. *NOT THE NAME*.
+
+<form id=''>
+<label for='1(id of the input)'></label>
+<input id='1' name='' type='text'>
+</form>
+
+If we are making a email field we should change the type to email. The process of the machine will be more clear. Gives us numbers, symbols and @. Ex:
+<label for="email">Email:</label>
+<input id='email' type="email" name="email">
+
+Same happens with the password:
+type='password' - the characters are masked
+
+Another type of text input but not a input tag:
+<textarea id='' name='' rows='' cols=''></textarea>
+rows and cols is to set the size of the message boarder.
