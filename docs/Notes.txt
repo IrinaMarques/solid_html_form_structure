@@ -82,3 +82,12 @@ type='radio'
 type='checkbox'
 type='submit'
 
+======================
+Fieldsets and Legends
+======================
+
+Grouping the forms: <fieldset></fieldset>
+Identifying forms: <legend></legend>
+
+Provide a nice visual effect in the page but also make the page more structurally useful and semantically sound.
+

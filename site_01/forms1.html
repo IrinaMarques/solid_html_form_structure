@@ -7,13 +7,17 @@
                 font-family: Helvetica, Arial, sans-serif;
             }
             * { box-sizing: border-box; }
-            #myform {
+            #myform { /*# because it's an id*/
                 width: 700px;
+                margin: 0 auto;
+            }
+
+            #myform fieldset {
                 border: 1px solid #bbb;
                 background-color: #f8f8f8;
                 border-radius: 8px;
                 padding: 20px;
-                margin: 0 auto;
+                margin-bottom: 20px;
             }
             
             #myform label, #myform input, #myform select {
@@ -49,6 +53,8 @@
     </head>
     <body>
         <form id="myform">
+          <fieldset>
+          <legend>Personal Information</legend>
            <!-- Personal Info -->
            <label for="firstname">First Name:</label> <!--type='text'-->
            <input id="firstname" name="firstname" type="text"/>
@@ -58,8 +64,10 @@
 
            <label for="email">Email:</label> <!--type='email'-->
            <input id="email" name="email" type="email"/>
+          </fieldset>
 
-           
+          <fieldset>
+          <legend>Login Information</legend>
            <!-- Login Info -->
            <label for="username">Username:</label>
            <input id="username" name="username" type="text"/>
@@ -69,8 +77,10 @@
 
            <label for="passwordconfirm">Confirm Password:</label>
            <input id="passwordconfirm" name="passwordconfirm" type="password"/>
-
-           
+          </fieldset>
+          
+          <fieldset>
+          <legend>Address</legend> 
            <!-- Address -->
            <label for="address1">Street Number and Name:</label>
            <input id="address1" name="address1" type="text"/>
@@ -91,7 +101,9 @@
            
            <label for="zip">Zip Code:</label>
            <input id="zip" name="zip" type="text"/>
-           
+          </fieldset>
+
+         
            <!-- Referrer -->
            <h4>How did you find us?</h4> <!--type='radio'-->
            <input type="radio" name="referrer" id="search-engine"/>
@@ -99,7 +111,7 @@
            
            <input type="radio" name="referrer" id="other"/>
            <label for="other" class="lbl-referrer">Other</label>
-           
+          
            <!-- Terms -->
            <h4>Terms &amp; Conditions</h4>
            <input type="checkbox" name="terms" id="terms"/> <!--type='checkbox'-->
