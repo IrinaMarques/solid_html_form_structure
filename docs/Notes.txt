@@ -47,3 +47,38 @@ type='password' - the characters are masked
 Another type of text input but not a input tag:
 <textarea id='' name='' rows='' cols=''></textarea>
 rows and cols is to set the size of the message boarder.
+
+==================
+Other Input Types
+==================
+
+Select statement:
+<Select> element with options <elements>.
+
+<select name='state' id='state'>
+<option value='TX'>Texas</option>
+<option value="AK">Alaska</option>
+</select>
+
+type='radio'
+In the inputs *THE NAMES MUST BE THE SAME*
+<input type="radio" name="referrer" id="search-engine"/>
+<label for="other" class="lbl-referrer">Other</label>
+
+type='checkbox'
+Can check multiples checkboxes
+<input type="checkbox" name="terms" id="terms"/>
+<label for="terms">I accept the Terms and Conditions</label>
+
+type='submit'
+Its a button
+<input type="submit" name="submit" id="submit" value="Submit Form"/>
+
+Now we have: 
+type='text'
+type='email'
+type='password'
+type='radio'
+type='checkbox'
+type='submit'
+

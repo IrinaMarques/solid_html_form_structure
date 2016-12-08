@@ -1,0 +1,2 @@
+** EXEMPLE OF A FORM **
+form1.html
