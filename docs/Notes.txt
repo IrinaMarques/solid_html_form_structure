@@ -91,3 +91,16 @@ Identifying forms: <legend></legend>
 
 Provide a nice visual effect in the page but also make the page more structurally useful and semantically sound.
 
+=================
+Placeholder Text
+=================
+
+Text that is placed inside the text elements to serve as placeholders until start typing the text.
+
+<input id="firstname" name="firstname" type="text" placeholder="First Name"/>
+
+When we start typing the text disappear.
+
+
+
+
