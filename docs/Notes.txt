@@ -101,6 +101,20 @@ Text that is placed inside the text elements to serve as placeholders until star
 
 When we start typing the text disappear.
 
+========================
+Autofocus and Tab Index
+========================
 
+Autofocus:
+Customize the way the cursor tabs. 
+Taping on the information when the page loads
 
+<input id="firstname" name="firstname" autofocus type="text" placeholder="First Name"/>
+
+Tab Index:
+If we had two columns or if we want to select something that is not next the first field.
+
+<input id="firstname" name="firstname" autofocus type="text" placeholder="First Name" tabindex="1" />
+
+In the next input we want to select we make tabindex="2" then tabindex="3" and so. We specify what order our fields are going to be highlighted as the user tabs to those fields.
 
