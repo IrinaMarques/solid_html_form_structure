@@ -81,6 +81,7 @@ type='password'
 type='radio'
 type='checkbox'
 type='submit'
+type='number'
 
 ======================
 Fieldsets and Legends
@@ -117,4 +118,25 @@ If we had two columns or if we want to select something that is not next the fir
 <input id="firstname" name="firstname" autofocus type="text" placeholder="First Name" tabindex="1" />
 
 In the next input we want to select we make tabindex="2" then tabindex="3" and so. We specify what order our fields are going to be highlighted as the user tabs to those fields.
+
+=======================
+Client Side Validation
+=======================
+
+If the don't want the form to be validated:
+<form id="myform" novalidate> 
+
+Required fields: works like autofocus atribute. In the fields that is required we add required to the input.
+
+<input id="firstname" name="firstname" autofocus required type="text" placeholder="First Name" tabindex="1" /> 
+
+Styling a invalid and valid field
+
+input:required:invalid, input:focus:invalid { 
+              border: 1px solid red;
+            }
+           
+input:required:valid, input:focus:valid {
+              border: 1px solid green;
+
 

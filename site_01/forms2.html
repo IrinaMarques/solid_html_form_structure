@@ -49,10 +49,18 @@
             h4 {
                 clear: left;
             }
+            /*invalid field turns another color*/
+            input:required:invalid, input:focus:invalid { 
+              border: 1px solid red;
+            }
+            /*valid field*/
+            input:required:valid, input:focus:valid {
+              border: 1px solid green;
+            }
         </style>
     </head>
     <body>
-        <form id="myform">
+        <form id="myform"> 
            <fieldset>
                <legend>Personal Information</legend>
                <!-- Personal Info -->
